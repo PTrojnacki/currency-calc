@@ -3,7 +3,7 @@ import React from 'react';
 const Choice = (props) => {
     const currencies = props.currencies;
     const options = currencies.map(currency => (
-        <option key={currency.id} value={currency.name}>{currency.name}</option>
+        <option key={currency.code} value={currency.code}>{currency.code}</option>
       ))
     return ( 
         <div className="choice">
